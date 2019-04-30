@@ -1,0 +1,12 @@
+<div class="accordion-wrapper">
+  <fieldset>
+    <button type="button" id="accDiv" (click)="toggleSection()">
+      <h4>{{expandCollapseText}}</h4>
+    </button>
+
+      <ul class="accr-ul" *ngIf="showSection" >
+        <ng-content></ng-content>
+      </ul>
+
+  </fieldset>
+</div>

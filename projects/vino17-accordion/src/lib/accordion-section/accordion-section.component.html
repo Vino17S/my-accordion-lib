@@ -1,0 +1,17 @@
+<div class="accordion" id="accordionExample">
+  <li class="card">
+    <button (click)="openLi()" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div class="card-header" id="headingOne">
+      <h4 class="mb-0" [ngClass]="{active: isActive}">
+        {{accSecTitle}}
+      </h4>
+      </div>
+      
+      <div *ngIf="showLiContent" id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <ng-content></ng-content>
+        </div>
+      </div>
+    </button>
+  </li>
+</div>

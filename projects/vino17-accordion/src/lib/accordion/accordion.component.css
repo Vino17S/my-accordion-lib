@@ -1,0 +1,33 @@
+#accDiv {
+    display: contents;
+    text-align: right;
+    font-size: 1rem;
+    transition: 0.4s;
+    font-weight: 400;
+    color: #007bff;
+    cursor: pointer;
+}
+#accDiv > h4:hover {
+    text-decoration: underline;
+}
+.accordion-wrapper > fieldset {
+    border: 1px solid rgba(0,0,0,.125);
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;    
+}
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;    
+}
